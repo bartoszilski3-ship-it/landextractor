@@ -1,0 +1,5 @@
+{
+  "name": "Ekstraktor Danych z PDF",
+  "description": "Aplikacja do automatycznego wyciągania danych osobowych i adresowych z dokumentów PDF przy użyciu AI Gemini.",
+  "requestFramePermissions": []
+}
