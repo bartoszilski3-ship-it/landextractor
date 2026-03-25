@@ -2,10 +2,10 @@ import { GoogleGenAI, Type } from "@google/genai";
 import { ParcelData } from "../types";
 
 export const extractDataFromImages = async (base64Images: string[]): Promise<ParcelData[]> => {
-  const apiKey = "AIzaSyAgEQG37COq23yjRq8Z87_jK8wyh1ngVjo";
+  const apiKey = localStorage.getItem("gemini_api_key");
   
-  if (!apiKey || apiKey === 'undefined' || apiKey.length < 5) {
-    throw new Error("Brak klucza API. Ustaw zmienną VITE_GEMINI_API_KEY w pliku .env.local.");
+  if (!apiKey || apiKey === 'undefined' || apiKey.length < 10) {
+  throw new Error("Brak klucza API. Wprowadź klucz przed użyciem.");
   }
 
   const ai = new GoogleGenAI({ apiKey });
