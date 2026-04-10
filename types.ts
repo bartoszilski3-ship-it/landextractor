@@ -1,4 +1,3 @@
-
 export interface ParcelData {
   teryt: string;
   wojewodztwo: string;
@@ -10,6 +9,8 @@ export interface ParcelData {
   powierzchnia_ha: string;
   nr_kw: string;
   wlasciciel_pelny: string;
+  imiona: string;
+  nazwisko: string;
   kod_pocztowy: string;
   ulica_nr: string;
   miejscowosc: string;
